@@ -1147,6 +1147,7 @@ func (lo *LuaObject) Callf(rtypes []reflect.Type, args ...interface{}) (res []in
 		}
 		L.Pop(len(rtypes))
 	}
+	L.Pop(1)
 	return
 }
 
